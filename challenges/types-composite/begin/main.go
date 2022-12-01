@@ -3,13 +3,25 @@ package main
 
 // define an author type with a name
 //
+type author struct {
+	first string
+	last  string
+}
 
 // define a book type with a title and author
 //
+type book struct {
+	title      string
+	authorname author
+}
 
 // define a library type to track a list of books
 //
+type library struct {
+	books []book
+}
 
+//var library = make([]book,0)
 // define addBook to add a book to the library
 //
 
